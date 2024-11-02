@@ -400,5 +400,56 @@
                                                 
                                                 DEL *.*
                                                 … deletes ALL the files in the current folder.</h1>
+
+
+                                                <h1>9. How to delete a folder from CMD (RD in Command Prompt)
+                                                    The DEL command cannot be used to delete folders. Therefore we must use another command to remove any empty folder, which is RD:
+                                                    
+                                                    RD [Folder]
+                                                    We have previously deleted all the files from the Digital_Citizen_Tests folder. It is now time to delete the directory too, by typing:
+                                                    
+                                                    RD Digital_Citizen_Tests
+                                                    
+                                                    Using the RD command to delete folders in Command Prompt
+                                                    
+                                                    10. How to launch an app from CMD (Command Prompt)
+                                                    To run a program from the Command Prompt, you can navigate to the folder that contains the executable and type the program’s name. For example, if you want to launch Control Panel using Command Prompt, go to C:\Windows\System32, where its executable is: control.exe. Let's see how this operation is done if you were in your user directory. First of all, change the working directory to the application's folder by typing:
+                                                    
+                                                    cd /d c:\windows\System32\
+                                                    Then, type the name of the app’s executable file:
+                                                    
+                                                    control.exe
+                                                    … and press Enter.
+                                                    
+                                                    
+                                                    Launching an app from Command Prompt
+                                                    
+                                                    Alternatively, you can also run an app from CMD directly, no matter what folder you’re currently browsing, by specifying the app’s executable file and its full path in Command Prompt. Opening Control Panel from the previous example would look like this, regardless of your current directory in CMD:
+                                                    
+                                                    C:\Windows\System32\control.exe
+                                                    11. How to get help in the Command Prompt (HELP in CMD)
+                                                    To access help in the Command Prompt, you can use the HELP command:
+                                                    
+                                                    help
+                                                    … and then press Enter. This displays a list of all the available commands, as you can see below.
+                                                    
+                                                    
+                                                    The HELP command from Command Prompt
+                                                    
+                                                    If a particular command interests you, type help followed by the name of that command. Another way to do the same thing is to type the command’s name followed by the /? parameter. To test it, use
+                                                    
+                                                    help cd
+                                                    or
+                                                    
+                                                    cd/?
+                                                    … to display information about the cd command. In the picture below you can see the result:
+                                                    
+                                                    
+                                                    Using the HELP command or the /? parameter to find help in Command Prompt
+                                                    
+                                                    NOTE: This tutorial covers only a couple of commands for Command Prompt. If you want to delve deeper, you can also read:
+                                                    
+                                                    View system information and manage processes from CMD or PowerShell
+                                                    Command Prompt (CMD) - 8 network commands you should know</h1>
   </body>
 </html>
