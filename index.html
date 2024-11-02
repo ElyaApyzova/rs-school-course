@@ -298,158 +298,157 @@
       date and time when they were last modified).
     </p>
 
-    <h1>4. How to create a new directory with Command Prompt (MD in CMD)
-        You can make a new folder using the MKDIR (Make Directory) or the MD command. The syntax of these commands is
-        
-        MKDIR Folder
-        or
-        
-        MD Folder
-        Let's say we need to create a new folder called Digital_Citizen_Life that is going to be placed in the D:\Digital_Citizen folder. To do that, we need to type:
-        
-        mkdir Digital_Citizen_Life
-        … and then press Enter, as shown below.</h1>
-        <h1>TIP: If you want to create a folder that contains spaces in its name, make sure to wrap its name between quotes or apostrophes. For example, if you want to create a folder called Digital Citizen, run the MD command like this:
+    <h1>
+      4. How to create a new directory with Command Prompt (MD in CMD) You can
+      make a new folder using the MKDIR (Make Directory) or the MD command. The
+      syntax of these commands is MKDIR Folder or MD Folder Let's say we need to
+      create a new folder called Digital_Citizen_Life that is going to be placed
+      in the D:\Digital_Citizen folder. To do that, we need to type: mkdir
+      Digital_Citizen_Life … and then press Enter, as shown below.
+    </h1>
+    <h1>
+      TIP: If you want to create a folder that contains spaces in its name, make
+      sure to wrap its name between quotes or apostrophes. For example, if you
+      want to create a folder called Digital Citizen, run the MD command like
+      this: md “Digital Citizen” How to create a directory in CMD with spaces in
+      its name To test if it worked, use the DIR command again. The newly
+      created folder appears in the list.
+    </h1>
+    <h1>
+      IMPORTANT: Do not forget that all these commands depend on your current
+      location in the Command Prompt. For instance, if you are on the C: drive
+      and type MKDIR test, the new folder is created in the root of the C:
+      drive. Another way to create a folder without having to go to the desired
+      location for it is to type the complete path of the new folder. For
+      example, if you are working on the D: drive and you want to create a new
+      folder in C:, called other_stuff, type: mkdir c:\other_stuff … and then
+      press Enter.
+    </h1>
+    <h1>
+      When you need to create a folder with subfolders at the same time, you can
+      use this command: MKDIR Folder\Subfolder . For instance, if we type: mkdir
+      Digital_Citizen_Tests\Beta\Test1 … three folders are created:
+      Digital_Citizen_Tests, Beta, and Test1, in a tree-like structure.
+    </h1>
 
-            md “Digital Citizen”
-            
-            How to create a directory in CMD with spaces in its name
-            
-            To test if it worked, use the DIR command again. The newly created folder appears in the list.</h1>
-            <h1>IMPORTANT: Do not forget that all these commands depend on your current location in the Command Prompt. For instance, if you are on the C: drive and type MKDIR test, the new folder is created in the root of the C: drive.
+    <h1>
+      5. How to rename files and folders with Command Prompt (REN in CMD) To
+      rename files and folders, you need to use the REN (Rename) command. To
+      rename folders, type: ren Folder NewFolderName For example, if we wanted
+      to rename the Digital_Citizen_Tests folder to Digital_Citizen_Final_Tests,
+      we should run: ren Digital_Citizen_Tests Digital_Citizen_Final_Tests … and
+      press Enter.
+    </h1>
 
-                Another way to create a folder without having to go to the desired location for it is to type the complete path of the new folder. For example, if you are working on the D: drive and you want to create a new folder in C:, called other_stuff, type:
-                
-                mkdir c:\other_stuff
-                … and then press Enter.</h1>
-                <h1>
-                    When you need to create a folder with subfolders at the same time, you can use this command:
-                    
-                    MKDIR Folder\Subfolder
-                    .
-                    For instance, if we type:
-                    
-                    mkdir Digital_Citizen_Tests\Beta\Test1
-                    … three folders are created: Digital_Citizen_Tests, Beta, and Test1, in a tree-like structure.</h1>
+    <h1>
+      To rename a file, use the same command, like this: ren filename.extension
+      newname.extension For instance, to rename the Digital_Citizen_Picture1.bmp
+      file to Image0.bmp, we have to run the command: ren
+      Digital_Citizen_Image1.bmp Image0.bmp
+    </h1>
 
-                    <h1>5. How to rename files and folders with Command Prompt (REN in CMD)
-                        To rename files and folders, you need to use the REN (Rename) command. To rename folders, type:
-                        
-                        ren Folder NewFolderName
-                        For example, if we wanted to rename the Digital_Citizen_Tests folder to Digital_Citizen_Final_Tests, we should run:
-                        
-                        ren Digital_Citizen_Tests Digital_Citizen_Final_Tests
-                        … and press Enter.</h1>
+    <h1>
+      6. How to copy files in CMD (COPY in Command Prompt) The COPY command
+      allows you to copy files from one location to another. To use this
+      command, type: copy location\filename.extension
+      newlocation\newname.extension Advertisement For example, let's use this
+      command to copy the Image0.bmp file from the Digital_Citizen folder
+      located on the D: drive to the D:\Digital_Citizen\Digital_Citizen_Tests\
+      folder. To make things more interesting, we want the file to be named
+      Testing_Picture1.gif. To do all that, we must type the command: copy
+      D:\Digital_Citizen\image0.bmp
+      D:\Digital_Citizen\Digital_Citizen_Tests\testing_picture1.gif … followed
+      by Enter. You should also receive a confirmation of the operation, as you
+      can see below.
+    </h1>
 
-                        <h1>To rename a file, use the same command, like this:
+    <p>
+      If you are copying within the same directory, you do not have to include
+      the path in the command. As an example, let’s copy
+      Digital_Citizen_Notes.txt from D:\Digital_Citizen in the same folder, only
+      with a different extension: let's say Digital_Citizen_Notes.docx. To do
+      that, we have to run the command: copy Digital_Citizen_Notes.txt
+      Digital_Citizen_Notes.docx
+    </p>
 
-                            ren filename.extension newname.extension
-                            For instance, to rename the Digital_Citizen_Picture1.bmp file to Image0.bmp, we have to run the command:
-                            
-                            ren Digital_Citizen_Image1.bmp Image0.bmp</h1>
+    <h1>
+      7. How to copy folders in CMD, including their contents (XCOPY in CMD) To
+      copy a folder and its content from one location to another, use the XCOPY
+      command: XCOPY /s /i Let's assume that we need to copy a folder from
+      D:\Digital_Citizen to C:\Backup_Digital_Citizen. To do that, we have to
+      run the command: xcopy /s /i d:\Digital_Citizen c:\Backup_Digital_Citizen
+      The /s parameter ensures that all the directories and subdirectories are
+      going to be copied, except the ones that are empty. The /i parameter
+      creates a new directory if the destination folder does not exist and
+      copies all the files in it.
+    </h1>
 
+    <h1>
+      8. How to delete files with Command Prompt (DEL in CMD) The DEL (Delete)
+      is used to delete files from the folders you have created. To delete all
+      the files from a folder, you can run the command del folder For instance,
+      let’s say we want to delete all the files from the Digital_Citizen_Tests
+      folder found in the D:\Digital_Citizen directory. For that, you first open
+      the Digital_Citizen folder in Command Prompt and then you run this
+      command: del Digital_Citizen_Tests You must confirm the delete process by
+      typing the letter y for Yes, and then pressing Enter. NOTE: To also delete
+      hidden files from the folder, you must add the /h parameter. Also, note
+      that the DEL command does not work for deleting folders - for that, you
+      have to use the RD command, covered in the next section of this tutorial.
+    </h1>
 
-                            <h1>6. How to copy files in CMD (COPY in Command Prompt)
-                                The COPY command allows you to copy files from one location to another. To use this command, type:
-                                
-                                copy location\filename.extension newlocation\newname.extension
-                                
-                                Advertisement
-                                For example, let's use this command to copy the Image0.bmp file from the Digital_Citizen folder located on the D: drive to the D:\Digital_Citizen\Digital_Citizen_Tests\ folder. To make things more interesting, we want the file to be named Testing_Picture1.gif. To do all that, we must type the command:
-                                
-                                copy D:\Digital_Citizen\image0.bmp D:\Digital_Citizen\Digital_Citizen_Tests\testing_picture1.gif
-                                … followed by Enter. You should also receive a confirmation of the operation, as you can see below.</h1>
+    <h1>
+      If you need to delete a single file, use the DEL command followed by that
+      file’s name. For instance, to delete the file Digital_Citizen_Notes.txt
+      from D:\Digital_Citizen, we should run the command: del
+      Digital_Citizen_Notes.txt Using the DEL command to delete a single file in
+      Command Prompt Here is a list of useful DEL combinations that are worth
+      mentioning: DEL *.DOCX … deletes all the files in the current folder that
+      have the DOCX extension (you can use any file extension necessary, DOCX is
+      just an example). DEL Test*.* … deletes all the files in the working
+      folder whose names begin with Test. DEL *.* … deletes ALL the files in the
+      current folder.
+    </h1>
 
-                                <p>If you are copying within the same directory, you do not have to include the path in the command. As an example, let’s copy Digital_Citizen_Notes.txt from D:\Digital_Citizen in the same folder, only with a different extension: let's say Digital_Citizen_Notes.docx. To do that, we have to run the command:
+    <h1>
+      9. How to delete a folder from CMD (RD in Command Prompt) The DEL command
+      cannot be used to delete folders. Therefore we must use another command to
+      remove any empty folder, which is RD: RD [Folder] We have previously
+      deleted all the files from the Digital_Citizen_Tests folder. It is now
+      time to delete the directory too, by typing: RD Digital_Citizen_Tests
+      Using the RD command to delete folders in Command Prompt 10. How to launch
+      an app from CMD (Command Prompt) To run a program from the Command Prompt,
+      you can navigate to the folder that contains the executable and type the
+      program’s name. For example, if you want to launch Control Panel using
+      Command Prompt, go to C:\Windows\System32, where its executable is:
+      control.exe. Let's see how this operation is done if you were in your user
+      directory. First of all, change the working directory to the application's
+      folder by typing: cd /d c:\windows\System32\ Then, type the name of the
+      app’s executable file: control.exe … and press Enter. Launching an app
+      from Command Prompt Alternatively, you can also run an app from CMD
+      directly, no matter what folder you’re currently browsing, by specifying
+      the app’s executable file and its full path in Command Prompt. Opening
+      Control Panel from the previous example would look like this, regardless
+      of your current directory in CMD: C:\Windows\System32\control.exe 11. How
+      to get help in the Command Prompt (HELP in CMD) To access help in the
+      Command Prompt, you can use the HELP command: help … and then press Enter.
+      This displays a list of all the available commands, as you can see below.
+      The HELP command from Command Prompt If a particular command interests
+      you, type help followed by the name of that command. Another way to do the
+      same thing is to type the command’s name followed by the /? parameter. To
+      test it, use help cd or cd/? … to display information about the cd
+      command. In the picture below you can see the result: Using the HELP
+      command or the /? parameter to find help in Command Prompt NOTE: This
+      tutorial covers only a couple of commands for Command Prompt. If you want
+      to delve deeper, you can also read: View system information and manage
+      processes from CMD or PowerShell Command Prompt (CMD) - 8 network commands
+      you should know
+    </h1>
 
-                                    copy Digital_Citizen_Notes.txt Digital_Citizen_Notes.docx</p>
-
-                                    <h1>7. How to copy folders in CMD, including their contents (XCOPY in CMD)
-                                        To copy a folder and its content from one location to another, use the XCOPY command:
-                                        
-                                        XCOPY /s /i
-                                        Let's assume that we need to copy a folder from D:\Digital_Citizen to C:\Backup_Digital_Citizen. To do that, we have to run the command:
-                                        
-                                        xcopy /s /i d:\Digital_Citizen c:\Backup_Digital_Citizen
-                                        The /s parameter ensures that all the directories and subdirectories are going to be copied, except the ones that are empty. The /i parameter creates a new directory if the destination folder does not exist and copies all the files in it.</h1>
-
-                                        <h1>8. How to delete files with Command Prompt (DEL in CMD)
-                                            The DEL (Delete) is used to delete files from the folders you have created. To delete all the files from a folder, you can run the command
-                                            
-                                            del folder
-                                            For instance, let’s say we want to delete all the files from the Digital_Citizen_Tests folder found in the D:\Digital_Citizen directory. For that, you first open the Digital_Citizen folder in Command Prompt and then you run this command:
-                                            
-                                            del Digital_Citizen_Tests
-                                            You must confirm the delete process by typing the letter y for Yes, and then pressing Enter.
-                                            
-                                            NOTE: To also delete hidden files from the folder, you must add the /h parameter. Also, note that the DEL command does not work for deleting folders - for that, you have to use the RD command, covered in the next section of this tutorial.</h1>
-
-                                            <h1>If you need to delete a single file, use the DEL command followed by that file’s name. For instance, to delete the file Digital_Citizen_Notes.txt from D:\Digital_Citizen, we should run the command:
-
-                                                del Digital_Citizen_Notes.txt
-                                                
-                                                Using the DEL command to delete a single file in Command Prompt
-                                                
-                                                Here is a list of useful DEL combinations that are worth mentioning:
-                                                
-                                                DEL *.DOCX
-                                                … deletes all the files in the current folder that have the DOCX extension (you can use any file extension necessary, DOCX is just an example).
-                                                
-                                                DEL Test*.*
-                                                … deletes all the files in the working folder whose names begin with Test.
-                                                
-                                                DEL *.*
-                                                … deletes ALL the files in the current folder.</h1>
-
-
-                                                <h1>9. How to delete a folder from CMD (RD in Command Prompt)
-                                                    The DEL command cannot be used to delete folders. Therefore we must use another command to remove any empty folder, which is RD:
-                                                    
-                                                    RD [Folder]
-                                                    We have previously deleted all the files from the Digital_Citizen_Tests folder. It is now time to delete the directory too, by typing:
-                                                    
-                                                    RD Digital_Citizen_Tests
-                                                    
-                                                    Using the RD command to delete folders in Command Prompt
-                                                    
-                                                    10. How to launch an app from CMD (Command Prompt)
-                                                    To run a program from the Command Prompt, you can navigate to the folder that contains the executable and type the program’s name. For example, if you want to launch Control Panel using Command Prompt, go to C:\Windows\System32, where its executable is: control.exe. Let's see how this operation is done if you were in your user directory. First of all, change the working directory to the application's folder by typing:
-                                                    
-                                                    cd /d c:\windows\System32\
-                                                    Then, type the name of the app’s executable file:
-                                                    
-                                                    control.exe
-                                                    … and press Enter.
-                                                    
-                                                    
-                                                    Launching an app from Command Prompt
-                                                    
-                                                    Alternatively, you can also run an app from CMD directly, no matter what folder you’re currently browsing, by specifying the app’s executable file and its full path in Command Prompt. Opening Control Panel from the previous example would look like this, regardless of your current directory in CMD:
-                                                    
-                                                    C:\Windows\System32\control.exe
-                                                    11. How to get help in the Command Prompt (HELP in CMD)
-                                                    To access help in the Command Prompt, you can use the HELP command:
-                                                    
-                                                    help
-                                                    … and then press Enter. This displays a list of all the available commands, as you can see below.
-                                                    
-                                                    
-                                                    The HELP command from Command Prompt
-                                                    
-                                                    If a particular command interests you, type help followed by the name of that command. Another way to do the same thing is to type the command’s name followed by the /? parameter. To test it, use
-                                                    
-                                                    help cd
-                                                    or
-                                                    
-                                                    cd/?
-                                                    … to display information about the cd command. In the picture below you can see the result:
-                                                    
-                                                    
-                                                    Using the HELP command or the /? parameter to find help in Command Prompt
-                                                    
-                                                    NOTE: This tutorial covers only a couple of commands for Command Prompt. If you want to delve deeper, you can also read:
-                                                    
-                                                    View system information and manage processes from CMD or PowerShell
-                                                    Command Prompt (CMD) - 8 network commands you should know</h1>
+    <h1>
+      Optional Materials 1. How Browsers Work: Behind the scenes of modern web
+      browsers 2. VSCode Tips and Tricks - 1h read 3. Vscode Extensions 4.
+      WebStorm Tips and Tricks 5. What Happens When You Type ‘www.google.com'
+    </h1>
   </body>
 </html>
